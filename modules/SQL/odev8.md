@@ -63,28 +63,33 @@ insert into employee (name, birthday, email) values ('Tobye Nowakowski', '2006-0
 3.  Sütunların her birine göre diğer sütunları güncelleyecek 5 adet **UPDATE** işlemi yapalım.
 ```sql
 UPDATE employee
-SET name = 'Ali',
+SET 
+	name = 'Ali',
 	birthday = '1990-01-01',
 	email = 'ali@ali.com'
 WHERE id = 13;
 
 UPDATE employee
-SET birthday = '1955-10-10',
+SET 
+	birthday = '1955-10-10',
 	email = 'sabra@sabra.com'
 WHERE name = 'Sabra Cowans';
 
 UPDATE employee
-SET name = 'Veli',
+SET 
+	name = 'Veli',
 	email = 'veli@veli.com'
 WHERE birthday > '2020-01-01';
 
 UPDATE employee
-SET name = 'Orhan',
+SET 
+	name = 'Orhan',
 	birthday = '1989-01-01'
 WHERE email = 'rde1@google.com.br';
 
 UPDATE employee
-SET name = 'ABC',
+SET 
+	name = 'ABC',
 	birthday = '1900-01-01'
 WHERE name LIKE '%n%n%';
 ```
