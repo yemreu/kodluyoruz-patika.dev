@@ -1,0 +1,10 @@
+```yaml
+version: "3.4"
+services:
+  node-server:
+    container_name: my-server
+    build: .
+    ports:
+      - 3001:3000
+```
+
